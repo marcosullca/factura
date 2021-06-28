@@ -1,2 +1,108 @@
-﻿
+﻿<div class="container-fluid contenedor_listar">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="form-group form_select">
+                <label for="invoice_product" class="label_select">Producto</label>
+                <select class="form-control" id="invoice_product" name="invoice_product">
+                    <option>asd</option>
+                    <option>2wq</option>
+                    <option>3das</option>
+                    <option>412da</option>
+                    <option>5asdsad</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group form_select">
+                <label for="invoice_quantity" class="label_select">Cantidad</label>
+                <input type="number" name="invoice_quantity" id="invoice_quantity" />
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group form_select">
+                <input type="button" id="add" name="add" value="Agregar" />
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-bordered bg-info" style="margin-top: 5%;">
+        <thead>
+            <tr>
+                <th>#Factura</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Total</th>
+                <th>Estado</th>
+                <th>Cancelar</th>
+                <th>Ver</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*@{
+
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th align="left" class="productth">@item.studentID</th>
+                    <th align="left" class="productth">@item.studentName</th>
+                    <th align="left" class="productth">@item.studentAddress</th>
+                </tr>
+            }*@
+        </tbody>
+    </table>
+
+    <div class="col-md-4">
+        <div class="form-group form_select">
+            <label for="invoice_client" class="label_select">Cliente</label>
+            <select class="form-control" id="invoice_client" name="invoice_client">
+                <option>asd</option>
+                <option>2wq</option>
+                <option>151</option>
+                <option>412da</option>
+                <option>5asdsad</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+         $(function () {
+
+            $("#add").click(function () {
+                var std = {};
+                //std.studentName = $("#StudentName").val();
+                std.clientID = $("#invoice_client").val();
+                std.invoicecode = "samplestring322";
+                std.date = 2021-04-25;
+                std.total = 60;
+                std.status = true;
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("InsertInvoice")',
+                    data: "{std: " + JSON.stringify(std) + "}",
+                    dataType: "json",
+                    contentType: "application/json: charset=utf-8",
+                    success: function () {
+                        LoadData();
+                    },
+                    error: function () {
+                        alert("Error while inserting data");
+                    }
+
+                });
+                return false;
+            });
+        });
+
+    </script>
     
+    
+} 

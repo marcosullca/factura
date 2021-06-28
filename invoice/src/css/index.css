@@ -1,6 +1,9 @@
 ﻿
 .contenedor_listar{
     margin-top: 50px;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
 }
 .form_select{
     display:flex;

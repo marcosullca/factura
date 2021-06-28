@@ -1,0 +1,113 @@
+﻿
+@model List<invoice.Models.Invoice>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid contenedor_listar">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group form_select">
+                <label for="select_cliente" class="label_select">Cliente</label>
+                <select class="form-control" id="select_cliente">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="form-group form_select">
+                <label for="select_cliente" class="label_select">Producto</label>
+                <select class="form-control" id="select_cliente">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="form-group form_select">
+                <label for="select_cliente" class="label_select">#Factura</label>
+                <select class="form-control" id="select_cliente">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row row_second">
+        <div class="col-md-4">
+
+            <div class="form-group form_select">
+                <label for="select_cliente" class="label_select">Fecha desde</label>
+                <select class="form-control" id="select_cliente">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="form-group form_select">
+                <label for="select_cliente" class="label_select">Fecha hasta</label>
+                <select class="form-control" id="select_cliente">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <input class="btn btn-info" type="button" name="btnBuscar" value="Buscar" />
+        </div>
+    </div>
+
+    <table class="table table-bordered" style="margin-top: 5%;">
+        <thead>
+            <tr>
+                <th>#Factura</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Total</th>
+                <th>Estado</th>
+                <th>Cancelar</th>
+                <th>Ver</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th align="left" class="productth">@item.invoicecode</th>
+                    <th align="left" class="productth">@item.date</th>
+                    <th align="left" class="productth">@item.total</th>
+                    <th align="left" class="productth">@item.status</th>
+                    <th align="left" class="productth">@item.Client.name</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+

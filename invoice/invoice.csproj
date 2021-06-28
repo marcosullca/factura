@@ -130,6 +130,7 @@
     <Compile Include="Models\Invoice.cs" />
     <Compile Include="Models\InvoiceDetail.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\SearchInvoice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy\InvoiceProxy.cs" />
     <Compile Include="Proxy\ResponseProxy.cs" />
@@ -173,10 +174,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\RegistrarFactura.cshtml" />
     <Content Include="Views\Home\FacturaDetalle.cshtml" />
+    <Content Include="Views\Invoice\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Invoice\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

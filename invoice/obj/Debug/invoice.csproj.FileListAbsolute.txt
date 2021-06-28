@@ -79,7 +79,6 @@ D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\bin\es\S
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\bin\es\System.Web.WebPages.resources.dll
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\bin\es\System.Web.WebPages.Deployment.resources.dll
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\bin\es\System.Web.WebPages.Razor.resources.dll
-D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\obj\Debug\invoice.csprojAssemblyReference.cache
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\obj\Debug\invoice.csproj.CoreCompileInputs.cache
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\obj\Debug\invoice.csproj.CopyComplete
 D:\TECSUP\TareasTecsup\2021-1\applicationsEmpresariales\Invoice\invoice\obj\Debug\invoice.dll
