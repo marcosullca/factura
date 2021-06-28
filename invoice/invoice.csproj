@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvoiceController.cs" />
+    <Compile Include="Controllers\InvoiceDetailController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,6 +176,7 @@
     <Content Include="Views\Home\RegistrarFactura.cshtml" />
     <Content Include="Views\Home\FacturaDetalle.cshtml" />
     <Content Include="Views\Invoice\Index.cshtml" />
+    <Content Include="Views\InvoiceDetail\IndexInvoiceDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
